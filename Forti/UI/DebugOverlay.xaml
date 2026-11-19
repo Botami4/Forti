@@ -1,0 +1,49 @@
+<UserControl x:Class="Forti.UI.DebugOverlay"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             HorizontalAlignment="Left" VerticalAlignment="Top"
+             Margin="12" IsHitTestVisible="False">
+    <Border Background="#C0000000" CornerRadius="6" Padding="12" BorderBrush="#40FFFFFF" BorderThickness="1">
+        <StackPanel Width="260">
+            <TextBlock Text="SKYFALL ROYALE DEBUG (F3)" FontWeight="Bold" Foreground="#00E5FF" FontSize="13" Margin="0,0,0,6"/>
+            
+            <Grid Margin="0,1">
+                <TextBlock Text="Performance:" Foreground="#AAAAAA" FontSize="11"/>
+                <TextBlock x:Name="TxtFps" Text="60.0 FPS (16.6 ms)" HorizontalAlignment="Right" Foreground="#00FF66" FontWeight="SemiBold" FontSize="11"/>
+            </Grid>
+
+            <Grid Margin="0,1">
+                <TextBlock Text="Game State:" Foreground="#AAAAAA" FontSize="11"/>
+                <TextBlock x:Name="TxtGameState" Text="ActiveBattle" HorizontalAlignment="Right" Foreground="#FFFFFF" FontWeight="SemiBold" FontSize="11"/>
+            </Grid>
+
+            <Grid Margin="0,1">
+                <TextBlock Text="Entities:" Foreground="#AAAAAA" FontSize="11"/>
+                <TextBlock x:Name="TxtEntities" Text="10 / 10 visible" HorizontalAlignment="Right" Foreground="#FFFFFF" FontSize="11"/>
+            </Grid>
+
+            <Grid Margin="0,1">
+                <TextBlock Text="Visible Chunks:" Foreground="#AAAAAA" FontSize="11"/>
+                <TextBlock x:Name="TxtChunks" Text="1" HorizontalAlignment="Right" Foreground="#FFFFFF" FontSize="11"/>
+            </Grid>
+
+            <Grid Margin="0,1">
+                <TextBlock Text="Player Pos:" Foreground="#AAAAAA" FontSize="11"/>
+                <TextBlock x:Name="TxtPlayerPos" Text="X: 0.0, Y: 0.0, Z: 0.0" HorizontalAlignment="Right" Foreground="#FFD700" FontFamily="Consolas" FontSize="11"/>
+            </Grid>
+
+            <Grid Margin="0,1">
+                <TextBlock Text="Storm Circle:" Foreground="#AAAAAA" FontSize="11"/>
+                <TextBlock x:Name="TxtStorm" Text="R: 180m (Waiting)" HorizontalAlignment="Right" Foreground="#D070FF" FontSize="11"/>
+            </Grid>
+
+            <Grid Margin="0,1">
+                <TextBlock Text="Alive Players:" Foreground="#AAAAAA" FontSize="11"/>
+                <TextBlock x:Name="TxtAlive" Text="10 / 10" HorizontalAlignment="Right" Foreground="#FFFFFF" FontSize="11"/>
+            </Grid>
+        </StackPanel>
+    </Border>
+</UserControl>
